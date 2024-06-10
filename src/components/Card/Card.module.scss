@@ -1,0 +1,46 @@
+.containerCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding-top: 56px;
+}
+
+.Card {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.linkCard {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    width: 340px;
+    height: 340px;
+    margin-bottom: 3em;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 10px;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,0.5) 15%, rgba(255,0,0,0) 100%);
+    }
+}
+
+.titleCard {
+    position: absolute;
+    z-index: 100;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    width: 70%;
+    bottom: 20px;
+    left: 20px;
+}

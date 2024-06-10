@@ -1,0 +1,14 @@
+.About {
+    margin-top: 5em;
+}
+
+.collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    .items {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+}

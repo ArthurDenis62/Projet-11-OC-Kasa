@@ -1,0 +1,32 @@
+.container {
+    position: relative;
+    max-width: 1240px;
+    height: auto;
+    margin-top: 6em;
+    border-radius: 25px;
+    background-color: rgba(246, 246, 246, 1);
+}
+
+.card {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    margin-bottom: 56px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.paragraphe {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.containerCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding-top: 56px;
+}
