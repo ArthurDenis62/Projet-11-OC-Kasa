@@ -1,5 +1,4 @@
 import E from './Error.module.scss';
-import Footer from '../../containers/Footer/Footer';
 
 const Error = () => {
     return (
@@ -9,7 +8,6 @@ const Error = () => {
                 <p>Oups! La page que vous demandez n'existe pas.</p>
                 <a href="/">Retourner à la page d'accueil</a>
             </div>
-            <Footer />
         </>
     )
 }

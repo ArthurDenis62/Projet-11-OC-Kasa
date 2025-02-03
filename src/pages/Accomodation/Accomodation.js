@@ -1,5 +1,5 @@
 import styles from './Accomodation.module.scss';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import datas from '../../data/data';
 import Slider from '../../components/Carousel/Carousel';
 import Collapse from '../../components/Collapse/Collapse';
@@ -9,6 +9,9 @@ import redStar from '../../img/red_stars.svg';
 function Accommodation() {
 	let {id} = useParams();
 	const dataCurrentAccomodation = datas.find(data => data.id === id);
+	if (!dataCurrentAccomodation) {
+		return <Navigate to='../Error/Error'/>
+	}
 	const name = dataCurrentAccomodation.title; 
 	const rating = dataCurrentAccomodation.rating;
 	const description  = dataCurrentAccomodation.description;
